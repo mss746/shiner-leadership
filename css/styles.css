@@ -66,7 +66,7 @@ nav {
 
 /* ── MOBILE MENU ── */
 .mobile-menu {
-  display: none; position: fixed; inset: 0; z-index: 999;
+display: none; position: fixed; inset: 0; z-index: 1001;
   background: rgba(12,10,8,0.98); padding: 100px 32px 48px;
   flex-direction: column; gap: 28px;
 }
@@ -129,6 +129,15 @@ nav {
 }
 .btn-ghost:hover { background: var(--gold); color: var(--ink); }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--gold-light);
+  outline-offset: 4px;
+}
+
+.mobile-menu-close:focus-visible {
+  color: var(--gold-light);
+}
 /* ── CHECK LIST ── */
 .check-list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
 .check-list li {
@@ -136,6 +145,32 @@ nav {
   padding-left: 20px; position: relative; color: var(--body);
 }
 .check-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold); font-size: .75rem; }
+
+/* ── MOMENT LIST ── */
+.moment-list {
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+
+.moment-list p {
+  margin: 0;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--rule);
+  font-family: 'Inter', sans-serif;
+  font-size: .92rem;
+  line-height: 1.75;
+  color: var(--body);
+  letter-spacing: .01em;
+}
+
+.moment-list p:last-child {
+  border-bottom: none;
+}
+
+.moment-list span {
+  color: var(--cream);
+  font-weight: 500;
+}
 
 /* ── ABOUT PAGE ── */
 .about-grid { display: grid; grid-template-columns: 280px 1fr; gap: 72px; align-items: start; }

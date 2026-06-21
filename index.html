@@ -59,27 +59,27 @@
 <body>
 
 <nav id="main-nav">
-  <a class="nav-logo" href="#home" onclick="showPage('home')">SHINER <span>LEADERSHIP</span></a>
+  <a class="nav-logo" href="#home">SHINER <span>LEADERSHIP</span></a>
   <ul class="nav-links">
-    <li><a class="active" id="nav-home" href="#home" onclick="showPage('home')">Home</a></li>
-    <li><a id="nav-work" href="#work" onclick="showPage('work')">The Work</a></li>
-    <li><a id="nav-research" href="#research" onclick="showPage('research')">Research</a></li>
-    <li><a id="nav-about" href="#about" onclick="showPage('about')">About</a></li>
-    <li><a id="nav-contact" href="#contact" onclick="showPage('contact')">Contact</a></li>
+    <li><a class="active" id="nav-home" href="#home">Home</a></li>
+    <li><a id="nav-work" href="#work">The Work</a></li>
+    <li><a id="nav-research" href="#research">Research</a></li>
+    <li><a id="nav-about" href="#about">About</a></li>
+    <li><a id="nav-contact" href="#contact">Contact</a></li>
   </ul>
-  <a class="nav-cta" href="#contact" onclick="showPage('contact')">Contact</a>
+  <a class="nav-cta" href="#contact">Contact</a>
   <button class="hamburger" onclick="toggleMobileMenu()" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
   <span></span><span></span><span></span>
 </button>
 </nav>
 
-<div class="mobile-menu" id="mobile-menu">
-  <button class="mobile-menu-close" onclick="toggleMobileMenu()">&#x2715;</button>
-  <a href="#home" onclick="showPage('home');toggleMobileMenu()">Home</a>
-  <a href="#work" onclick="showPage('work');toggleMobileMenu()">The Work</a>
-  <a href="#research" onclick="showPage('research');toggleMobileMenu()">Research</a>
-  <a href="#about" onclick="showPage('about');toggleMobileMenu()">About</a>
-  <a href="#contact" onclick="showPage('contact');toggleMobileMenu()">Contact</a>
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Site menu">
+  <button class="mobile-menu-close" onclick="toggleMobileMenu()" aria-label="Close menu">&#x2715;</button>
+  <a href="#home">Home</a>
+  <a href="#work">The Work</a>
+  <a href="#research">Research</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
 </div>
 
 <!-- HOME -->
@@ -90,29 +90,33 @@
         <h1 class="display-1" style="margin-bottom:48px;">Even the best leaders have blind spots. The right coach helps them see what they can’t.<br/></h1>
       <p class="lead" style="margin-bottom:1.6em; max-width:100%;">Michael Shiner is a Boston-based executive coach who works with a small number of next-generation health care and life-sciences leaders.</p>
       <p class="lead" style="margin-bottom:1.6em; max-width:100%;">He works confidentially with founders, CEOs, and senior leaders.</p>
-      <p class="lead" style="margin-bottom:2em; max-width:100%;">Investors, board members, CEOs, and CHROs introduce Michael at moments when a leader&#8217;s responsibilities have begun to change:</p>
-      <ul class="check-list" style="margin-bottom:2.4em;">
-        <li>During and after fundraising rounds</li>
-        <li>As founders become CEOs</li>
-        <li>As high-performing leaders move into broader enterprise roles, including the C-suite</li>
-        <li>When experienced CEOs and senior leaders seek coaching as a matter of good leadership practice, or during a setback or transition</li>
-      </ul>
+
+      <div class="hero-cta" style="display:flex; gap:16px; flex-wrap:wrap; margin:32px 0 40px;">
+  <a class="btn-primary" href="#contact">Start a confidential conversation &rarr;</a>
+  <a class="btn-ghost" href="#work">How the work works</a>
+</div>
+
+<p class="lead" style="margin-bottom:1.8em; max-width:100%;">Investors, board members, CEOs, and CHROs introduce Michael at moments when a leader&#8217;s responsibilities have begun to change:</p>
+
+<div class="moment-list" style="margin-bottom:2.6em;">
+  <p><span>Fundraising.</span> During and after rounds, when expectations, pressure, and visibility increase.</p>
+  <p><span>Founder-to-CEO transition.</span> As founders grow into the broader demands of the CEO role.</p>
+  <p><span>Enterprise leadership.</span> As high-performing leaders move into larger roles, including the C-suite.</p>
+  <p><span>Experienced leaders.</span> When experienced leaders seek coaching as a matter of good leadership practice, or during a difficult moment.</p>
+</div>
       <p class="lead" style="max-width:100%;">Michael has worked with leaders at Biogen, Vertex, CVS, and Massachusetts General Hospital and more broadly across technology, professional services, and defense &#8212; including Microsoft, Amazon, Deloitte, Ernst &amp; Young, and the U.S. Navy.</p>
     </div>
   </section>
   <section style="padding:80px 0; border-bottom:1px solid var(--rule);">
     <div class="container-narrow">
       <div class="eyebrow">Michael&#8217;s Story</div>
-      <p class="lead" style="margin-bottom:1.6em; max-width:100%;">Michael began his career as an entrepreneur, building and selling a company before becoming a family-office investor in mid-market companies in Canada. He saw the pressures of leadership and its consequences.</p>
-      <p class="lead" style="margin-bottom:1.6em; max-width:100%;">That experience drew him to doctoral research at Harvard on psychology and leadership effectiveness. He studied biotech leaders and found that even excellent leaders undermine themselves, if rarely. Behavioral science explains the predictable patterns and how to interrupt them &#8212; and Michael applies that research directly as a coach.</p>
-      <p class="lead" style="max-width:100%;">He teaches the psychology of decision-making at Brown University and has also taught at Harvard and MIT. He served as Professor of Leadership and Ethics at the U.S. Naval War College.</p>
+      <p class="lead" style="margin-bottom:1.6em; max-width:100%;">Michael began his career as an entrepreneur and investor before turning to doctoral research at Harvard on psychology and leadership effectiveness.</p>
+      <p class="lead" style="margin-bottom:1.6em; max-width:100%;">His research found that even excellent leaders undermine themselves through predictable behavioral patterns — patterns that behavioral science can explain and, with the right support, interrupt. He brought that research directly into his work as a coach.</p>
+      <p class="lead" style="margin-bottom:2.2em; max-width:100%;">He teaches the psychology of decision-making at Brown University and has also taught at Harvard and MIT. He served as Professor of Leadership and Ethics at the U.S. Naval War College.</p>
+      <a class="btn-ghost" href="#about">More about Michael &rarr;</a>
     </div>
   </section>
-  <section style="padding:60px 0; text-align:center;">
-    <div class="container-narrow">
-      <button class="btn-primary" onclick="showPage('contact')">Contact Michael &rarr;</button>
-    </div>
-  </section>
+
   <div class="page-monogram">
     <img src="images/sl-monogram.svg" alt="Shiner Leadership" width="80" height="80"/>
   </div>
@@ -130,18 +134,23 @@
 
       <h2 style="font-size:1.4em; font-weight:600; margin-bottom:1em;">How an engagement works</h2>
 
-      <p class="lead" style="margin-bottom:1.6em; max-width:100%;">An engagement begins with a conversation. Michael conducts confidential interviews with the right people to develop an early picture of how the leader is experienced, what is working well, and where the leader can improve. That interview data is an input into what the leader chooses to work on and how.</p>
+  <p class="lead" style="margin-bottom:1.8em; max-width:100%;">An engagement is ongoing, confidential, and built around the leader&#8217;s real work.</p>
 
-      <p class="lead" style="margin-bottom:1.6em; max-width:100%;">The engagement itself is ongoing and confidential. It is built around regular one-on-one conversations &#8212; more frequent at the beginning, then typically every two weeks, depending on the leader’s schedule &#8212; together with real-time availability when something important arises: a decision that needs a sounding board, a difficult conversation that requires preparation, a relationship that has become complicated, or a moment of uncertainty where candid counsel matters. Over time, Michael develops a detailed understanding of the leader, the company, the team dynamics, and the pressures shaping decisions. Where useful, he observes leadership meetings, board meetings, or critical presentations &#8212; not as a participant, but as an informed and independent advisor.</p>
+  <div class="moment-list" style="margin-bottom:2.8em;">
+    <p><span>Initial conversation.</span> The work begins with a conversation about the leader, the context, and the questions that matter most.</p>
+    <p><span>Confidential interviews.</span> Michael speaks with the right people to understand how the leader is experienced, what is working well, and where improvement would matter.</p>
+    <p><span>Regular one-on-one work.</span> Conversations are more frequent at the beginning, then typically every two weeks, depending on the leader&#8217;s schedule.</p>
+    <p><span>Real-time counsel.</span> Michael is available when something important arises: a difficult decision, a relationship issue, a board moment, or a conversation that needs preparation.</p>
+    <p><span>Independent observation.</span> Where useful, he observes leadership meetings, board meetings, or critical presentations &#8212; not as a participant, but as an informed advisor.</p>
+    <p><span>Six-month commitment.</span> Engagements begin with a six-month commitment and are structured as a fixed-fee arrangement. For pricing and availability, contact Michael directly.</p>
+  </div>
 
-      <p class="lead" style="margin-bottom:2.8em; max-width:100%;">Engagements begin with a six-month commitment. Michael works with a small number of leaders at any given time. Confidentiality is sacred: the content of conversations does not leave the relationship, and Michael does not report to boards, investors, or organizations about what a leader shares. The relationship is built on that trust.</p>
-
-      <p class="lead" style="margin-bottom:2.8em; max-width:100%;">Engagements are structured as a fixed-fee commitment, front-loaded to reflect the intensity of early work. For pricing and availability, contact Michael directly.</p>
+  <p class="lead" style="margin-bottom:2.8em; max-width:100%;">Confidentiality is sacred: the content of conversations does not leave the relationship, and Michael does not report to boards, investors, or organizations about what a leader shares. The relationship is built on that trust.</p>
 
       <h2 style="font-size:1.4em; font-weight:600; margin-bottom:1em;">What changes</h2>
 
       <p class="lead" style="margin-bottom:2.8em; max-width:100%;">Leaders who do this work make better decisions &#8212; not occasionally, but as a pattern. They become more honest about what is and isn&#8217;t working, more confident in their own strengths, and more effective in the relationships that matter most: the board, the executive team, the key hire. The problems that once created anxiety become problems they know how to navigate. That is the outcome: a leader who is clearer, calmer, and more capable &#8212; not in theory, but in the moments that count.</p>
-      <button class="btn-ghost" onclick="showPage('contact')">Begin a conversation &rarr;</button>
+  <a class="btn-ghost" href="#contact">Begin a conversation &rarr;</a>
     </div>
   </section>
   <div class="page-monogram">
@@ -163,7 +172,7 @@
       <div style="border-left:3px solid var(--gold); padding:28px 36px; background:var(--ink-3); margin-bottom:2.8em;">
         <p style="font-family:'Cormorant Garamond', serif; font-size:1.45rem; font-weight:400; font-style:italic; color:var(--gold-light); line-height:1.5;">Even excellent leaders undermine themselves, if rarely. The patterns are predictable &#8212; and that predictability is what makes them addressable.</p>
       </div>
-      <button class="btn-ghost" onclick="showPage('contact')">Contact Michael &rarr;</button>
+<a class="btn-ghost" href="#contact">Contact Michael &rarr;</a>
     </div>
   </section>
   <div class="page-monogram">
@@ -182,11 +191,12 @@
           <img alt="Michael Shiner" src="images/michael-shiner.jpg"/>
           <p class="about-photo__name">Michael Shiner</p>
           <p class="about-photo__org">Shiner Leadership</p>
-          <div style="margin-top:14px;">
-            <a aria-label="LinkedIn" class="linkedin-icon" href="https://www.linkedin.com/in/michael-shiner/" target="_blank">
-              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-            </a>
-          </div>
+          <div style="margin-top:14px; display:flex; align-items:center; gap:10px;">
+  <a aria-label="LinkedIn" class="linkedin-icon" href="https://www.linkedin.com/in/michael-shiner/" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+  </a>
+  <a href="https://www.linkedin.com/in/michael-shiner/" target="_blank" rel="noopener noreferrer" style="font-size:.68rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); text-decoration:none;">View LinkedIn</a>
+</div>
         </div>
         <div class="about-bio">
           <p>Michael Shiner is a Boston-based executive coach who works with founders, CEOs, and senior leaders in health care and life sciences.</p>
@@ -242,7 +252,7 @@
     </div>
     <div style="display:flex; flex-direction:column; align-items:flex-end; gap:12px;">
       <div class="footer-email"><a href="mailto:michael@shinerleadership.com">michael@shinerleadership.com</a></div>
-      <a aria-label="LinkedIn" class="linkedin-icon" href="https://www.linkedin.com/in/michael-shiner/" target="_blank">
+<a aria-label="LinkedIn" class="linkedin-icon" href="https://www.linkedin.com/in/michael-shiner/" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       </a>
     </div>
