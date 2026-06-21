@@ -230,3 +230,7 @@ footer {
 @media (max-width: 600px) {
   .display-1 { font-size: 2.4rem; }
 }
+.sr-only {
+  position: absolute; width: 1px; height: 1px;
+  overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap;
+}
