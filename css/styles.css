@@ -61,7 +61,7 @@ nav {
   transition: all .25s; cursor: pointer;
 }
 .nav-cta:hover { background: var(--gold); color: var(--ink); }
-.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; background: none; border: none; }
 .hamburger span { width: 24px; height: 1px; background: var(--gold); transition: all .3s; }
 
 /* ── MOBILE MENU ── */

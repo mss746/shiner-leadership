@@ -20,7 +20,11 @@
 
   function toggleMobileMenu() {
     var menu = document.getElementById('mobile-menu');
-    if (menu) menu.classList.toggle('open');
+    var btn = document.querySelector('.hamburger');
+    if (menu) {
+      var isOpen = menu.classList.toggle('open');
+      if (btn) btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    }
   }
 
   window.showPage = showPage;
